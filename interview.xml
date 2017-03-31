@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE interviews SYSTEM "interview.dtd">
+
+
+<interviews>
+	<interview rID="1" pID="1" sID="s1">
+		<date>2017-01-01</date>
+		<time>09:00:00</time>
+		<location>Aachen</location>
+		<assessment>
+			<answers>
+				<answer qID="1">lala</answer>
+				
+                                <answer qID="2">balala</answer>
+			</answers>
+			<techProficiency>3</techProficiency>
+                        <communication>3</communication>
+                        <enthusiasm>3</enthusiasm>		
+			<collegiality>3</collegiality>
+		</assessment>
+	</interview>
+
+
+        <interviewer sID="s1">
+		<forename>Albrecht</forename>
+		<surname>Armani</surname>
+		<honorific>Herr</honorific>
+		<title>Dr</title>
+        </interviewer>
+
+</interviews>

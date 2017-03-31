@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE resumes SYSTEM "resume.dtd">
+
+
+
+<resumes>
+	<resume rID="r1">
+		<summary>programmah</summary>
+		<identification>
+			<name>
+				<forename>Amy</forename>
+				<surname>Appletree</surname>
+				<honorific>Ms</honorific>
+			</name>
+			<DOB>dope</DOB>
+			<citizenship>small apple</citizenship>
+			<address>1 Apple Dr</address>
+			<telephone>12345678</telephone>
+			<email>qwerty</email>
+		</identification>
+		<education>
+			<degree level="doctoral">
+				<degreeName>apple</degreeName>
+				<institution>Apple U</institution>
+				<major>apple studies</major>
+				<minor>pear studies</minor>
+				<honours/>
+				<period>
+					<startDate>2009-01-01</startDate>
+					<endDate>2012-09-09</endDate>
+				</period>
+			</degree>
+		</education>
+		<experience>
+			<position where="Appletown">
+				<title>scientist</title>
+				<description>is cool</description>
+				<period>
+					<startDate>2008-01-01</startDate>
+					<endDate>2010-09-09</endDate>
+				</period>
+			</position>
+		</experience>
+		<skills>
+			<skill what="SQL" level="5"/>
+			<skill what="Scheme" level="5"/>
+
+                        <skill what="R" level="5"/>
+		</skills>
+	</resume>
+
+ <resume rID="r4">
+                <summary>programmah</summary>
+                <identification>
+                        <name>
+                                <forename>Danni</forename>
+                                <surname>Dolce</surname>
+				<honorific>Mr</honorific>
+                        </name>
+                        <DOB>dope</DOB>
+                        <citizenship>dandelion</citizenship>
+                        <address>1 Dan Dr</address>
+                        <telephone>12345678</telephone>
+                        <email>qwerty</email>
+                </identification>
+                <education>
+                        <degree level="doctoral">
+                                <degreeName>BArts</degreeName>
+                                <institution>Dartmouth College</institution>
+                                <major>dutch studies</major>
+                                <minor>drake studies</minor>
+                                <honours/>
+                                <period>
+                                        <startDate>2009-01-01</startDate>
+                                        <endDate>2012-09-09</endDate>
+                                </period>
+                        </degree>
+                </education>
+                <experience>
+                        <position where="Appletown">
+                                <title>scientist</title>
+                                <description>is cool</description>
+                                <period>
+                                        <startDate>2008-01-01</startDate>
+                                        <endDate>2010-09-09</endDate>
+                                </period>
+                        </position>
+                </experience>
+                <skills>
+                        <skill what="SQL" level="5"/>
+                        <skill what="Scheme" level="5"/>
+
+                        <skill what="R" level="5"/>
+                        <skill what="LaTeX" level="5"/>
+                </skills>
+        </resume>
+
+
+
+</resumes>
+
+

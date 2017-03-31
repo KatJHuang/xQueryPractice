@@ -1,0 +1,165 @@
+Running Assignment 3 XPath/XQuery Solutions
+
+============================== Query q1  ==============================
+
+------ raw output ------
+
+<dbjobs><posting pID="p1">
+		<position>programmah</position>
+		<reqSkill what="SQL" level="5" importance="5"/>
+		<reqSkill what="Scheme" level="2" importance="3"/>
+		<questions>
+			<question qID="1">
+				1+1=?
+			</question>
+		</questions>
+	</posting><posting pID="p2">
+                <position>cook</position>
+                <reqSkill what="SQL" level="5" importance="4"/>
+                <reqSkill what="Scheme" level="4" importance="1"/>
+                <questions>
+                        <question qID="1">
+                                1+1=?
+                        </question>
+                </questions>
+        </posting></dbjobs>
+
+------ formatted output (therefore well-formed) ------
+
+<?xml version="1.0" standalone="no"?>
+<dbjobs>
+  <posting pID="p1">
+    <position>programmah</position>
+    <reqSkill what="SQL" level="5" importance="5"/>
+    <reqSkill what="Scheme" level="2" importance="3"/>
+    <questions>
+      <question qID="1">
+				1+1=?
+			</question>
+    </questions>
+  </posting>
+  <posting pID="p2">
+    <position>cook</position>
+    <reqSkill what="SQL" level="5" importance="4"/>
+    <reqSkill what="Scheme" level="4" importance="1"/>
+    <questions>
+      <question qID="1">
+                                1+1=?
+                        </question>
+    </questions>
+  </posting>
+</dbjobs>
+
+------ checking validity of output ------
+
+Are there any validity errors? (no news is good news)
+
+============================== Query q2  ==============================
+
+------ raw output ------
+
+<posting pID="p1">
+		<position>programmah</position>
+		<reqSkill what="SQL" level="5" importance="5"/>
+		<reqSkill what="Scheme" level="2" importance="3"/>
+		<questions>
+			<question qID="1">
+				1+1=?
+			</question>
+		</questions>
+	</posting>,
+<posting pID="p3">
+                <position>programmah</position>
+                <reqSkill what="SQL" level="4" importance="1"/>
+                <reqSkill what="Scheme" level="2" importance="5"/>
+                <questions>
+                        <question qID="1">
+                                1+1=?
+                        </question>
+                </questions>
+        </posting>
+
+------ formatted output (therefore well-formed) ------
+
+TEMP.xml:11: parser error : Extra content at the end of the document
+	</posting>,
+	          ^
+
+------ checking validity of output ------
+
+Are there any validity errors? (no news is good news)
+TEMP.xml:3: element posting: validity error : root and DTD name do not match 'posting' and 'important'
+<posting pID="p1">
+                 ^
+TEMP.xml:12: parser error : Extra content at the end of the document
+	</posting>,
+	          ^
+
+============================== Query q3  ==============================
+
+------ raw output ------
+
+<qualified><candidate rid="r4" numskills="4" citizenzhip="dandelion"><name>Danni</name></candidate></qualified>
+
+------ formatted output (therefore well-formed) ------
+
+<?xml version="1.0" standalone="no"?>
+<qualified>
+  <candidate rid="r4" numskills="4" citizenzhip="dandelion">
+    <name>Danni</name>
+  </candidate>
+</qualified>
+
+------ checking validity of output ------
+
+Are there any validity errors? (no news is good news)
+
+============================== Query q4  ==============================
+
+------ raw output ------
+
+  Undefined Error: file: q4.xq not found
+
+------ formatted output (therefore well-formed) ------
+
+TEMP.xml:2: parser error : Start tag expected, '<' not found
+  Undefined Error: file: q4.xq not found
+  ^
+
+------ checking validity of output ------
+
+Are there any validity errors? (no news is good news)
+TEMP.xml:3: parser error : Start tag expected, '<' not found
+  Undefined Error: file: q4.xq not found
+  ^
+
+============================== Query q5  ==============================
+
+------ raw output ------
+
+<histogram><skill name="SQL"><count level="1" n="0"/><count level="2" n="0"/><count level="3" n="0"/><count level="4" n="0"/><count level="5" n="2"/></skill><skill name="Scheme"><count level="1" n="0"/><count level="2" n="0"/><count level="3" n="0"/><count level="4" n="0"/><count level="5" n="2"/></skill></histogram>
+
+------ formatted output (therefore well-formed) ------
+
+<?xml version="1.0" standalone="no"?>
+<histogram>
+  <skill name="SQL">
+    <count level="1" n="0"/>
+    <count level="2" n="0"/>
+    <count level="3" n="0"/>
+    <count level="4" n="0"/>
+    <count level="5" n="2"/>
+  </skill>
+  <skill name="Scheme">
+    <count level="1" n="0"/>
+    <count level="2" n="0"/>
+    <count level="3" n="0"/>
+    <count level="4" n="0"/>
+    <count level="5" n="2"/>
+  </skill>
+</histogram>
+
+------ checking validity of output ------
+
+Are there any validity errors? (no news is good news)
+
