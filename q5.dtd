@@ -5,3 +5,14 @@
 <!ELEMENT count EMPTY>
 <!ATTLIST count level CDATA #REQUIRED>
 <!ATTLIST count n CDATA #REQUIRED>
+
+
+
+<!--for example-->
+<histogram>
+	<skill name="SQL">
+		<count level="1" n="5"/>
+		<count level="3" n="5"/>
+		<count level="4" n="5"/>
+	</skill>
+</histogram>

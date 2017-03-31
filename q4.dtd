@@ -7,3 +7,11 @@
 <!ELEMENT collegiality (#PCDATA)>
 <!ATTLIST best resume CDATA #REQUIRED
                position CDATA #REQUIRED>
+
+
+<bestskills>
+	<best resume="r1" position="programmah">
+		<communication>5</communication>
+		<techProficiency>5</techProficiency>
+	</best>
+</bestskills>
