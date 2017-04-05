@@ -7,3 +7,5 @@
 <!ELEMENT collegiality (#PCDATA)>
 <!ATTLIST best resume CDATA #REQUIRED
                position CDATA #REQUIRED>
+
+

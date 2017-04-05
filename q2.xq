@@ -2,13 +2,16 @@
 
 return max($postingReq) :)
 
-for $skill in distinct-values(fn:doc('posting.xml')//reqSkill/@what)
+declare variable $dataset0 external;
+
+<important>{
+for $skill in distinct-values($dataset0//reqSkill/@what)
 	return 
-		let $match := fn:doc('posting.xml')//reqSkill[@what = $skill]
+		let $match := $dataset0//reqSkill[@what = $skill]
 		let $maxVal := max($match/(@level * @importance))
-		for $posting in fn:doc('posting.xml')//posting
+		for $posting in $dataset0//posting
 			where $posting/reqSkill[@what = $skill]/(@level * @importance) = $maxVal
 			return $posting
 			
-
+}</important>
 

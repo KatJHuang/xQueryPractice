@@ -3,7 +3,7 @@
 
 
 <interviews>
-	<interview rID="1" pID="1" sID="s1">
+	<interview rID="r1" pID="p1" sID="s1">
 		<date>2017-01-01</date>
 		<time>09:00:00</time>
 		<location>Aachen</location>
@@ -14,9 +14,9 @@
                                 <answer qID="2">balala</answer>
 			</answers>
 			<techProficiency>3</techProficiency>
-                        <communication>3</communication>
-                        <enthusiasm>3</enthusiasm>		
-			<collegiality>3</collegiality>
+                        <communication>30</communication>
+                        <enthusiasm>5</enthusiasm>		
+			<collegiality>30</collegiality>
 		</assessment>
 	</interview>
 
